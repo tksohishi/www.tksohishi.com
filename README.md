@@ -1,6 +1,6 @@
 # www.tksohishi.com
 
-Static personal site built with React, React Router v7, Tailwind CSS, and daisyUI.
+Static personal site built with React, React Router v7, Tailwind CSS, and daisyUI. Deployed to Cloudflare Pages.
 
 ## Stack
 
@@ -17,47 +17,14 @@ bun install
 bun dev
 ```
 
-`bun dev` uses polling mode by default in this project for reliable hot reload.
-
-If you want native file watching instead:
-
-```bash
-bun dev:native
-```
-
-Polling is more reliable in constrained file watcher environments, but it can use more CPU.
-
 Build for production:
 
 ```bash
 bun run build
 ```
 
-## Routing on Cloudflare Pages
+## Deployment
 
-- SPA fallback is configured via [`public/_redirects`](public/_redirects):
+Pushes to `main` automatically deploy via GitHub Actions (`.github/workflows/deploy-pages.yml`).
 
-```txt
-/* /index.html 200
-```
-
-## GitHub Actions deployment
-
-Workflow file: `.github/workflows/deploy-pages.yml`
-
-Set these in your GitHub repository settings:
-- Secret: `CLOUDFLARE_API_TOKEN`
-- Secret: `CLOUDFLARE_ACCOUNT_ID`
-- Variable: `CLOUDFLARE_PAGES_PROJECT_NAME`
-
-Trigger:
-- Automatic deploy on `main` pushes
-- Manual deploy via `workflow_dispatch`
-
-## Cloudflare dashboard checklist
-
-1. Create or confirm a Pages project for this repository.
-2. Attach `www.tksohishi.com` and `tksohishi.com` custom domains.
-3. Set redirect from apex to `https://www.tksohishi.com`.
-4. Redirect only the root `<project>.pages.dev` hostname to `https://www.tksohishi.com`.
-5. Keep preview hostnames `<branch>.<project>.pages.dev` available.
+SPA fallback is configured via [`public/_redirects`](public/_redirects).

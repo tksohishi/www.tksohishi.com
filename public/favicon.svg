@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    @media (prefers-color-scheme: light) {
+      rect { fill: #1a1a1a; }
+      text { fill: #fafafa; }
+    }
+    @media (prefers-color-scheme: dark) {
+      rect { fill: #fafafa; }
+      text { fill: #1a1a1a; }
+    }
+  </style>
+  <rect width="32" height="32" rx="4" />
+  <text x="16" y="22" font-family="system-ui, sans-serif" font-size="16" font-weight="600" text-anchor="middle">TO</text>
+</svg>

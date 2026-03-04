@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="Takeshi Ohishi personal site. Writing, projects, and profiles."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tksohishi.com" />
+    <meta property="og:title" content="Takeshi Ohishi" />
+    <meta property="og:description" content="Takeshi Ohishi personal site. Writing, projects, and profiles." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Takeshi Ohishi" />
+    <meta name="twitter:description" content="Takeshi Ohishi personal site. Writing, projects, and profiles." />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+    <title>Takeshi Ohishi</title>
+    <script>
+      (function() {
+        var t = localStorage.getItem('theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'tksohishi-dark' : 'tksohishi';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

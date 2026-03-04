@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/tksohishi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.tksohishi.com
+  * I am tksohishi (https://keybase.io/tksohishi) on keybase.
+  * I have a public key with fingerprint BCF0 BDFD AB41 1081 CF38  443D CE62 2C45 9CE0 6EBE
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cada21e61f6e7f8bdca3176c651ffea34de25bfda4927c095a04fbed37c1b41e0a",
+      "fingerprint": "bcf0bdfdab411081cf38443dce622c459ce06ebe",
+      "host": "keybase.io",
+      "key_id": "ce622c459ce06ebe",
+      "kid": "0101872ab8f14154ac0043fb17c0d8470dc7f9f588b21e65403355e4696523584d7e0a",
+      "uid": "09d8d029609e9326996ff28da14a5b19",
+      "username": "tksohishi"
+    },
+    "service": {
+      "hostname": "www.tksohishi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1562740553,
+  "expire_in": 157680000,
+  "prev": "76df65e19db0cabe2fe2275936b5558b15da27af69b63bf151b6f1485b8f5de3",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMNzAnicbVJ7UBVVHL4YKQ9lwCaSRh5uwNB4B/bs7tnHbRQnK2EIg0HQ8hLu2T0L
+K3Av3r2AhMjk0JCgpJSQysQUUWOANPiAmEu8hIDGa12mHB9TkEYzChKExDgh7UXt
+r84/Z87v933f+X6PS2ueMvh4OJHx1boxy7ce3/d+km9IjyiPLyaQVS4iTMVENl6+
+cI6MNXtGtioTJoIEFCmJskgBzAKFxZzCI1kSacCxEguBomCRZmRMQaTIIiNQnEQK
+UCQZBWGZ5iSAGIBJkTASimrJxLY8m2qx67JIUkgk6xQ9D0geSArNMwwtS5ilKImB
+goRJFiOsE7Osmpuhm0OihqNVqx7THxnL9v4H/8Q3CXiOEhGvAAZARpRIkqEVBHSD
+Ms9wpCxxiqBAnkfu0iBD0jSEmGEFFlI05BmZe+Q7/5GcIPMySQksKWCBplhBYBWF
+4mURMCJEQHADNWyziLlYR9uzNWuWqmWpRImR0MMFqoTdnXWX8hhSWFgY/R8sWrLm
+6gp5NqvdKllz9HSW3Z6nmdx0e1HeMh6jjMdKGUi1yHo3dUYBtmmq1UKYgI6U7Kpb
+GkCW4hgSQtpI4P15qg1nqG4E5Fie1I/7H1ygS3KsrLAQA0FG+ogRphRMURwUaBZB
+CHkEoD52TlRYAbE0UgAEiNWbyUO9p1DGNOGubZ/FSpgoQfcpZuqampppEe35NkyU
+9PWaPQ0ePoaVT69wr5nBx9v/yfLt8fI3fDDy2734mtij7WX1Xfb6cfb92R1Vs4l3
+ggWn80YpuelYpXbc5LrcP3witW/G32e+OKqyPSirdHJqo3mlo4l78XTtpLbtfjLh
+f7CqRXv+3YuNf6Nw8OBshJfrw1DA3oqMH/hsttuj7trtzvaUGvNodVPSnGdyCMzZ
++wu4+dDWN7RT7IqP2JVg8qsob5uar3tndV+Nd3AZbToZGNYWkn1guvRIm3K5v+FU
+gHnX5BctMGXnXcdH44euPNOZO9vy1ZU51q+nZ83ubYdfcB2YX+cUhxpcXqsqtp4Z
+T/29I8pyr3omom4xOOcONMdsLXFMpJcnreJGFt/wTnXsn5wZPnzBtjB7rmTk/NH8
+C9tvpBX0aUmvu17aG9G03REANzyYjp1pjQrXcvuNxnNx77VPPDS9dl+2nIiJD/IO
+W3o2IDZxoxYE+ktuRv95aHqF38ebY5vJjm82N24xf73HY27txbA+MWSpu7629eAP
+3eljt/6oTy1d4dxhG4j5MaRs8bZLupaazdlPvuKb0hV6ZmEUovWrK52nC+Kqrvrm
+J/+Kxn5+eWCw8djbUXF3fS1THesSE6ojRzvakyZyHAtjzzWTV6+n/5P+5oZYEPC5
+xbf1lGf4XxFDZysubemJHPwurSg/MNza27x0fXY4fFOnZ5q3pL4Ven5wd1rt8W4t
+YX1MkHHtp74/jQZXfhm4r+Ff8wnGXw==
+=m5bW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tksohishi
+
+==================================================================
+

@@ -4,15 +4,6 @@
 
 Static personal site (www.tksohishi.com) built with React 19, React Router v7, Tailwind CSS v4, daisyUI v5, and Vite.
 
-## Commands
-
-```bash
-pnpm install          # install dependencies
-pnpm dev              # dev server (polling mode, port 5173)
-pnpm run build        # typecheck + production build (outputs to dist/)
-pnpm lint             # eslint
-```
-
 ## Architecture
 
 - `src/router.tsx` — route definitions (React Router v7, `createBrowserRouter`)

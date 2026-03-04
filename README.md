@@ -13,16 +13,16 @@ Static personal site built with React, React Router v7, Tailwind CSS, and daisyU
 ## Local development
 
 ```bash
-pnpm install
-pnpm dev
+bun install
+bun dev
 ```
 
-`pnpm dev` uses polling mode by default in this project for reliable hot reload.
+`bun dev` uses polling mode by default in this project for reliable hot reload.
 
 If you want native file watching instead:
 
 ```bash
-pnpm dev:native
+bun dev:native
 ```
 
 Polling is more reliable in constrained file watcher environments, but it can use more CPU.
@@ -30,7 +30,7 @@ Polling is more reliable in constrained file watcher environments, but it can us
 Build for production:
 
 ```bash
-pnpm run build
+bun run build
 ```
 
 ## Routing on Cloudflare Pages

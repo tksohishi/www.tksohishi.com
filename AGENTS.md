@@ -2,7 +2,7 @@
 
 ## Overview
 
-Static personal site (www.tksohishi.com) built with React 19, React Router v7, Tailwind CSS v4, daisyUI v5, and Vite.
+Static personal site (www.tksohishi.com) built with React 19, React Router v7, Tailwind CSS v4, daisyUI v5, Vite, and Wrangler (Cloudflare).
 
 ## Architecture
 
@@ -11,6 +11,10 @@ Static personal site (www.tksohishi.com) built with React 19, React Router v7, T
 - `src/assets/` — static assets imported by components
 - `public/_redirects` — Cloudflare Pages SPA fallback
 - `.github/workflows/deploy-pages.yml` — CI/CD to Cloudflare Pages on `main` push
+
+## Conventions
+
+- Package manager: **bun** (not pnpm/npm)
 
 ## Boundaries
 

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FAFAFA;
+    padding: 80px;
+    position: relative;
+    page-break-after: always;
+    margin-bottom: 20px;
+  }
+
+  .accent-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #C8102E, #1A1A2E);
+  }
+
+  .page-num {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-size: 20px;
+    color: #BBB;
+    font-weight: 400;
+  }
+
+  .brand {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    font-size: 18px;
+    color: #BBB;
+    font-weight: 400;
+  }
+
+  /* Slide 1 - Hook */
+  .s1 .pretitle {
+    font-size: 32px;
+    color: #666;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .s1 .main-text {
+    font-size: 48px;
+    color: #1A1A2E;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .s1 .bonus {
+    font-size: 120px;
+    font-weight: 900;
+    color: #C8102E;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .s1 .sub {
+    font-size: 28px;
+    color: #999;
+  }
+  .s1 .deadline {
+    margin-top: 40px;
+    padding: 12px 40px;
+    border: 2px solid #C8102E;
+    border-radius: 40px;
+    font-size: 26px;
+    color: #C8102E;
+    font-weight: 700;
+  }
+
+  /* Slide 2 - What */
+  .s2 .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 60px;
+  }
+  .s2 .comparison {
+    width: 100%;
+  }
+  .s2 .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+  .s2 .label {
+    font-size: 26px;
+    color: #999;
+    width: 100px;
+    text-align: right;
+  }
+  .s2 .from {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A1A2E;
+    width: 280px;
+    text-align: center;
+  }
+  .s2 .arrow {
+    font-size: 36px;
+    color: #C8102E;
+  }
+  .s2 .to {
+    font-size: 36px;
+    font-weight: 700;
+    width: 320px;
+    text-align: center;
+  }
+  .s2 .to.normal { color: #999; }
+  .s2 .to.bonus { color: #C8102E; }
+  .s2 .row.highlight {
+    background: #FFF5F5;
+    border-radius: 16px;
+    padding: 20px;
+    border: 2px solid #C8102E;
+  }
+
+  /* Slide 3 - Who */
+  .s3 .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 60px;
+  }
+  .s3 .card {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    padding: 36px 44px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .s3 .card-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1A1A2E;
+  }
+  .s3 .card-fee {
+    font-size: 24px;
+    color: #999;
+  }
+  .s3 .card-note {
+    font-size: 20px;
+    color: #C8102E;
+    margin-top: 6px;
+  }
+
+  /* Slide 4 - Example */
+  .s4 .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 20px;
+  }
+  .s4 .route {
+    font-size: 28px;
+    color: #999;
+    margin-bottom: 50px;
+  }
+  .s4 .needed {
+    font-size: 26px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .s4 .jal-miles {
+    font-size: 64px;
+    font-weight: 900;
+    color: #1A1A2E;
+    margin-bottom: 50px;
+  }
+  .s4 .calc-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .s4 .calc-label {
+    font-size: 24px;
+    color: #999;
+    width: 100px;
+    text-align: right;
+  }
+  .s4 .calc-value {
+    font-size: 42px;
+    font-weight: 700;
+    width: 440px;
+    text-align: center;
+  }
+  .s4 .calc-value.old { color: #CCC; text-decoration: line-through; }
+  .s4 .calc-value.new { color: #C8102E; }
+  .s4 .savings {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #C8102E;
+    font-weight: 700;
+  }
+
+  /* Slide 5 - How */
+  .s5 .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 60px;
+    align-self: flex-start;
+  }
+  .s5 .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 44px;
+    width: 100%;
+  }
+  .s5 .step-num {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #C8102E;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .s5 .step-text {
+    font-size: 28px;
+    color: #1A1A2E;
+    line-height: 1.6;
+    padding-top: 8px;
+  }
+  .s5 .step-sub {
+    font-size: 22px;
+    color: #999;
+    margin-top: 6px;
+  }
+
+  /* Slide 6 - CTA */
+  .s6 .deadline-label {
+    font-size: 28px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  .s6 .deadline-date {
+    font-size: 72px;
+    font-weight: 900;
+    color: #C8102E;
+    margin-bottom: 50px;
+  }
+  .s6 .cta-text {
+    font-size: 32px;
+    color: #1A1A2E;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 50px;
+  }
+  .s6 .cta-button {
+    background: #C8102E;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 60px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+  }
+  .s6 .note {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #BBB;
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Hook -->
+<div class="slide s1" id="slide1">
+  <div class="accent-bar"></div>
+  <div class="pretitle">CAPITAL ONE → JAL</div>
+  <div class="main-text">マイル移行で</div>
+  <div class="bonus">30%増量</div>
+  <div class="deadline">4月30日まで</div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">1/6</div>
+</div>
+
+<!-- Slide 2: What -->
+<div class="slide s2" id="slide2">
+  <div class="accent-bar"></div>
+  <div class="title">移行レートが大幅アップ</div>
+  <div class="comparison">
+    <div class="row">
+      <div class="label">通常</div>
+      <div class="from">1,000マイル</div>
+      <div class="arrow">→</div>
+      <div class="to normal">750 JALマイル</div>
+    </div>
+    <div class="row highlight">
+      <div class="label">今なら</div>
+      <div class="from">1,000マイル</div>
+      <div class="arrow">→</div>
+      <div class="to bonus">975 JALマイル</div>
+    </div>
+  </div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">2/6</div>
+</div>
+
+<!-- Slide 3: Who -->
+<div class="slide s3" id="slide3">
+  <div class="accent-bar"></div>
+  <div class="title">対象カード</div>
+  <div class="card">
+    <div>
+      <div class="card-name">Capital One Venture</div>
+      <div class="card-note">入門に最適</div>
+    </div>
+    <div class="card-fee">$95/年</div>
+  </div>
+  <div class="card">
+    <div>
+      <div class="card-name">Capital One Venture X</div>
+      <div class="card-note">ラウンジアクセス付き</div>
+    </div>
+    <div class="card-fee">$395/年</div>
+  </div>
+  <div class="card">
+    <div>
+      <div class="card-name">Spark Miles for Business</div>
+      <div class="card-note">フリーランス・経営者向け</div>
+    </div>
+    <div class="card-fee">$95/年</div>
+  </div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">3/6</div>
+</div>
+
+<!-- Slide 4: Example -->
+<div class="slide s4" id="slide4">
+  <div class="accent-bar"></div>
+  <div class="title">日本往復に必要なマイル</div>
+  <div class="route">エコノミー特典航空券</div>
+  <div class="needed">必要JALマイル</div>
+  <div class="jal-miles">50,000マイル</div>
+  <div class="calc-row">
+    <div class="calc-label">通常</div>
+    <div class="calc-value old">66,700マイル必要</div>
+  </div>
+  <div class="calc-row">
+    <div class="calc-label">今なら</div>
+    <div class="calc-value new">51,300マイルでOK</div>
+  </div>
+  <div class="savings">15,400マイルお得!</div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">4/6</div>
+</div>
+
+<!-- Slide 5: How -->
+<div class="slide s5" id="slide5">
+  <div class="accent-bar"></div>
+  <div class="title">移行手順</div>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <div class="step-text">Capital Oneアプリを開く</div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <div class="step-text">Transfer Miles → JAL Mileage Bank</div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <div class="step-text">マイル数を入力して移行</div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div>
+      <div class="step-text">JAL側で反映を確認</div>
+      <div class="step-sub">※反映まで数日かかる場合あり</div>
+    </div>
+  </div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">5/6</div>
+</div>
+
+<!-- Slide 6: CTA -->
+<div class="slide s6" id="slide6">
+  <div class="accent-bar"></div>
+  <div class="deadline-label">キャンペーン締め切り</div>
+  <div class="deadline-date">4月30日</div>
+  <div class="cta-text">まだCapital Oneカードを持っていない?<br>今なら入会で75,000マイル獲得</div>
+  <div class="cta-button">プロフィールリンクから申込</div>
+  <div class="note">※ 詳細はCapital One公式サイトをご確認ください</div>
+  <div class="brand">@kuretoku</div>
+  <div class="page-num">6/6</div>
+</div>
+
+</body>
+</html>

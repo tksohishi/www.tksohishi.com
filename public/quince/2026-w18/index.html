@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>weekly-2026-W18-jp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap">
+<style>
+:root {
+  --fg: #1a1a1a;
+  --fg-soft: #444;
+  --muted: #888;
+  --rule: #999;
+  --rule-soft: #d8d8d8;
+  --link: #1a4d8c;
+  --bg-page: #f3f3f3;
+  --bg-paper: #ffffff;
+  --bg-stripe: #f7f7f7;
+  --bg-thead: #2a2a2a;
+}
+
+html {
+  font-size: 14px;
+  background: var(--bg-page);
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  line-height: 1.7;
+  color: var(--fg);
+  max-width: 780px;
+  margin: 32px auto;
+  padding: 40px 48px;
+  background: var(--bg-paper);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 28px 0 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 18px 0 6px 0;
+  color: #2a2a2a;
+}
+
+p {
+  margin: 0 0 10px 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+ul, ol {
+  margin: 6px 0 10px 0;
+  padding-left: 22px;
+}
+
+li { margin: 3px 0; }
+li > p { margin: 0; }
+
+strong { font-weight: 600; color: #000; }
+em { font-style: normal; color: var(--fg-soft); }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 14px 0;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: var(--bg-thead);
+  color: #fff;
+}
+
+th {
+  font-weight: 600;
+  text-align: left;
+  padding: 7px 8px;
+  vertical-align: top;
+}
+
+td {
+  padding: 7px 8px;
+  vertical-align: top;
+  border-bottom: 0.5px solid var(--rule-soft);
+}
+
+tbody tr:nth-child(even) td { background: var(--bg-stripe); }
+
+sup.footnote-ref {
+  font-size: 0.78em;
+  vertical-align: super;
+  line-height: 0;
+  margin: 0 1px;
+}
+sup.footnote-ref a {
+  color: #0c4da2;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5pt;
+  text-underline-offset: 1pt;
+}
+sup.footnote-ref a::before { content: "["; }
+sup.footnote-ref a::after { content: "]"; }
+
+.footnote {
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 0.5px solid var(--rule);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--fg-soft);
+}
+.footnote::before {
+  content: "出典";
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 4px;
+}
+.footnote > hr { display: none; }
+.footnote ol { padding-left: 22px; margin: 0; }
+.footnote li { margin: 0; }
+.footnote li > p { margin: 0; padding: 0; }
+.footnote li::marker { color: var(--muted); }
+.footnote a.footnote-backref { display: none; }
+
+hr {
+  border: none;
+  border-top: 0.5px solid #ccc;
+  margin: 16px 0;
+}
+
+.metric-strip {
+  display: flex;
+  gap: 0;
+  margin: 14px 0 22px 0;
+  padding: 0;
+  border-top: 0.75px solid #2a2a2a;
+  border-bottom: 0.75px solid #2a2a2a;
+}
+.metric-strip > div {
+  flex: 1;
+  padding: 10px 8px;
+  border-right: 0.25px solid #ccc;
+  text-align: left;
+}
+.metric-strip > div:last-child { border-right: none; }
+.metric-strip .label {
+  display: block;
+  font-size: 0.72rem;
+  color: #666;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+.metric-strip .value {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fg);
+  line-height: 1.0;
+  margin-right: 5px;
+}
+.metric-strip .delta {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #555;
+}
+
+@media (max-width: 720px) {
+  body {
+    margin: 0;
+    padding: 24px 18px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 18mm 20mm 22mm 20mm;
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-size: 8pt;
+      color: #888;
+    }
+  }
+  html { font-size: 10pt; background: #fff; }
+  body {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    line-height: 1.65;
+  }
+  h2, h3 { page-break-after: avoid; }
+  table, ul, ol { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<h1>週次レポート 2026-W18</h1>
+<p>対象期間: 2026年4月22日から4月28日の直近7日ローリング。入力は<code>/pulse</code>4本、深掘りメモ2本、利用可能なIG投稿4本。既存の<code>reports/pulse-2026-04-27.pdf</code>は参照していない。</p>
+<h2>エグゼクティブサマリー</h2>
+<ul>
+<li>今週の最重要シグナルは日本柑橘である。ゆずは既に成熟、sudachiは<a href="https://www.prnewswire.com/news-releases/red-bull-reveals-the-new-red-bull-summer-edition-sudachi-lime-302753244.html">Red Bull Sudachi Lime全米発売 / PR Newswire</a>で量販に先回りされた。ブローカー視点では、かぼすが最も空白が大きい。</li>
+<li>発酵は<a href="https://www.saveur.com/">Saveur</a>の<a href="https://www.saveur.com/ingredient-spotlight/koji-breaking-the-mold/">Koji特集</a>と<a href="https://www.bonappetit.com/">Bon Appetit</a>の<a href="https://www.bonappetit.com/recipe/cured-egg-yolks">Cured Egg Yolks</a>で、麹、甘酒、味噌漬けを米国シェフ向けに説明しやすい週になった。</li>
+<li>ホーム領域では<a href="https://www.foodandwine.com/">Food &amp; Wine</a>、Bon Appetit、<a href="https://www.seriouseats.com/">Serious Eats</a>が非毒性、単一素材、マイクロプラスチック回避、プレミアム代替のクックウェアを集中的に扱った。南部鉄器とバーミキュラの米国棚を検証する価値がある。</li>
+<li>為替は2026年4月27日時点でUSD/JPY159.54、前週比ほぼ横ばい。弱円は追い風だが、2025年の日米枠組みによる15%ベースライン関税が食品の支配的なコスト変数である。</li>
+<li>最優先アクションは、フンドーキン醤油のかぼすポン酢と大分の完熟かぼすについて、米国輸入権と供給余力を2週間以内に確認すること。6月28日から30日のSummer Fancy Food Show NYCが接触窓口になる。</li>
+</ul>
+<div class="metric-strip">
+  <div><span class="label">Sudachi mass signal</span><span class="value">2026-04-27</span><span class="delta">Red Bull全米発売</span></div>
+  <div><span class="label">Yuzu kosho</span><span class="value">+63%</span><span class="delta">4年メニュー浸透率</span></div>
+  <div><span class="label">FX</span><span class="value">159.54</span><span class="delta">USD/JPY 2026-04-27</span></div>
+</div>
+
+<h2>米国トレンドスキャン</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>テーマ</th>
+<th>カテゴリ</th>
+<th>持続性</th>
+<th>主な出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ゆず成熟、sudachi量販化、かぼす空白</td>
+<td>食品、フレーバー</td>
+<td>深掘り主導、4月27日に強化</td>
+<td><a href="https://www.prnewswire.com/news-releases/red-bull-reveals-the-new-red-bull-summer-edition-sudachi-lime-302753244.html">Red Bull Sudachi Lime</a>、IFT、Treatt、社内深掘り</td>
+</tr>
+<tr>
+<td>2</td>
+<td>麹、甘酒、味噌、卵黄味噌漬け</td>
+<td>発酵、パントリー</td>
+<td>2回の<code>/pulse</code>で主要化</td>
+<td><a href="https://www.saveur.com/ingredient-spotlight/koji-breaking-the-mold/">Koji Is Breaking the Mold Once Again / Saveur</a>、<a href="https://www.bonappetit.com/recipe/cured-egg-yolks">Cured Egg Yolks / Bon Appetit</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>非毒性、単一素材、プレミアム代替クックウェア</td>
+<td>ホーム</td>
+<td>3回の<code>/pulse</code>で継続</td>
+<td><a href="https://www.foodandwine.com/non-toxic-kitchen-tools-amazon-11757968">Non-toxic kitchen tools / Food &amp; Wine</a>、<a href="https://www.seriouseats.com/hexclad-rice-pot-and-tamagoyaki-pan-review-11948968">HexClad rice pot and tamagoyaki pan / Serious Eats</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>マティーニ、クラシックカクテル、日本酒・紫蘇・柚子</td>
+<td>ドリンク</td>
+<td>3回の<code>/pulse</code>で継続</td>
+<td><a href="https://www.foodandwine.com/martini-food-recipes-11953349">Martini-Inspired Recipes / Food &amp; Wine</a>、<a href="https://www.saveur.com/recipes/shiso-fine-cocktail/">Shiso Fine Cocktail / Saveur</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>非欧州系プレミアム菓子パン</td>
+<td>ベーカリー</td>
+<td>2回出現</td>
+<td><a href="https://www.bonappetit.com/story/conchas-are-the-new-croissant">Conchas are the new croissant / Bon Appetit</a>、<a href="https://www.foodandwine.com/cardamom-buns-11950762">Kardemummabullar / Food &amp; Wine</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>日本カレーとアジアン・パントリーの一般編集化</td>
+<td>パントリー</td>
+<td>2回出現</td>
+<td><a href="https://www.foodandwine.com/japanese-curry-meatballs-11952069">Japanese Curry Meatballs / Food &amp; Wine</a>、JETRO DC Sakura Matsuri記事</td>
+</tr>
+<tr>
+<td>7</td>
+<td>唐辛子、クリーンラベル、長寿文脈</td>
+<td>調味料、ウェルネス</td>
+<td>3回出現</td>
+<td><a href="https://www.foodandwine.com/spicy-foods-longevity-link-11757879">Spicy foods longevity link / Food &amp; Wine</a>、Datassential yuzu koshoデータ</td>
+</tr>
+</tbody>
+</table>
+<p>今週新たに浮上したテーマは、かぼす、麹、非毒性クックウェアである。先週から続いたテーマは、ゆず、カクテル、日本式調理器具、Erewhon的なプレミアム棚文脈である。</p>
+<p>関連するIGでは、<a href="https://www.instagram.com/cabagges.world/">@cabagges.world</a>が2026年4月25日に柚子胡椒入りの春の親子丼を投稿し、柚子胡椒がクリエイター文脈に乗ることを補強した。<a href="https://www.instagram.com/annierose.nelson/">@annierose.nelson</a>は2026年4月23日にNaoki Matchaを含む健康食投稿を出し、抹茶とウェルネスの継続性を示した。<a href="https://www.instagram.com/aimeefrance/">@aimeefrance</a>のサワードウ投稿は発酵家庭調理の弱い補助シグナルに留まる。</p>
+<h2>日本供給シグナル</h2>
+<p><a href="https://www.jetro.go.jp/">JETRO</a>は2026年4月27日にFY2026 SME Export Support Ecosystem補助金の公募を開始した。食品、越境EC、海外販路支援を含むため、今回の候補サプライヤーとの初回会話で「輸出支援を使える可能性がある」と言える。</p>
+<p>農水省は2026年4月27日、GOHAN Project第5回会合を発表した。主眼は中東向け米・米加工品だが、米輸出の組織基盤があることは、炊飯器、米加工、和食パントリーの周辺提案に使える。</p>
+<p>PR TIMESでは美濃焼の現代テーブルウェアブランドmiBRANDが2026年4月24日にLoft展開を発表し、4月27日からポップアップを開始した。国内限定だが、波佐見焼、美濃焼、土鍋などをNY NOW向けに検討する際の日本側供給シグナルになる。</p>
+<p>明示的なヌルとして、4月25日から27日の日本側ソースでは、麹、甘酒、日本酒、焼酎、カレー、和牛、土鍋、Hario/Kinto/波佐見焼、米国小売への新規導入発表は見つからなかった。Saveurの麹特集から4日遅れでも、日本側PRはまだ反応していない。</p>
+<h2>ブリッジ状況</h2>
+<p>為替は2026年4月27日時点でUSD/JPY159.54。弱円は固定円建て価格の米ドル換算に有利だが、週次で大きな変化はない。</p>
+<p>関税は、今週新たなHTS変更は確認されていない。一方、2025年の日米枠組みによる15%ベースライン関税は、柚子果汁、かぼす果汁、ポン酢、乾燥ピール、小瓶調味料の粗利を直接削る構造変数である。高単価DTCより、専門グローサリーとB2B原料で痛みが大きい。</p>
+<p>展示会は2本に絞る。食品は2026年6月28日から30日のSummer Fancy Food Show NYC。ホーム、ギフト、テーブルウェアは2026年8月2日から4日のNY NOW Summer。どちらもJavits Centerで、NYメトロ重視の現在の文脈に合う。</p>
+<h2>トレンドへの日本アングル</h2>
+<p>かぼすは、ゆずやsudachiよりブローカー向きである。ゆずは既にYakami、Yuzuco、Kimino、Monin、Spindrift x Momofukuが存在し、空白ではない。sudachiはRed Bullで言葉自体が量販化した。かぼすは大分産地、完熟かぼす、フンドーキンのかぼすポン酢という差別化材料がありながら、米国のRTD、DTC、プレミアム棚で確認された競合が少ない。</p>
+<p>麹と味噌は、いきなりWhole Foods棚を狙うより、NYのシェフパントリーから入る方が現実的である。SaveurとBon Appetitの編集文脈は、塩麹、甘酒、八丁味噌、卵黄味噌漬けを「日本の伝統」ではなく「使える技法」として説明できる。</p>
+<p>クックウェアでは、南部鉄器とバーミキュラが最も筋が良い。米国編集は安価な模倣品だけではなく、単一素材、非毒性、長く使える道具を探している。Williams Sonoma、Food52、Crate &amp; Barrel、MoMA Storeの棚確認が先である。</p>
+<p>唐辛子では、柚子胡椒、寒造里、八幡屋礒五郎の七味、S&amp;Bの上位帯が、発酵、辛味、長寿、職人由来を同時に満たす。小瓶で物流が軽く、果汁より関税の絶対額も抑えやすい。</p>
+<h2>注目仮説</h2>
+<h3>1. かぼすは「次の柚子」として最も実行可能な棚仮説である</h3>
+<p>背景: Red Bullが2026年4月27日にSudachi Limeを全米発売したことで、sudachiは量販認知が先に立った。ゆずは<a href="https://monin.us/blogs/news/monin-announces-2025-flavor-of-the-year-yuzu">Monin 2025 Flavor of the Year</a>、Spindrift x Momofuku、Yuzuco、Yakamiで既に市場化済みである。かぼすだけが、RTDなし、DTCなし、Whole Foods/Erewhon/Eataly棚SKU未確認という空白を残している。</p>
+<p>ピッチ角度: 「米国ではゆずは既に成熟、sudachiはRed Bullが全米量販で先に取った。かぼすだけが、RTDなし、DTCなし、Whole Foods／Erewhon／Eataly棚なしの空白カテゴリである。大分の完熟かぼすとフンドーキンのかぼすポン酢は、Summer Fancy Food Show NYCで米国専門グロサリーに直接当てられる。」</p>
+<p>90日アクション: 2週間以内にフンドーキン醤油の米国輸入権、大分完熟かぼすの輸出割当、既存独占の有無を確認する。並行してWhole Foods Northeast、Eataly NYC、Foragers Chelsea、Pop Up Grocerの4者にSummer Fancy Food Show前後の商談枠を作る。</p>
+<h3>2. 南部鉄器とバーミキュラは米国の非毒性クックウェア文脈に乗る</h3>
+<p>背景: 4月27日の<code>/pulse</code>では、Food &amp; Wine、Bon Appetit、Serious Eatsが、非毒性、マイクロプラスチック回避、キャストアイロン、Le Creuset/Staub代替、Quince、Our Placeの売り切れを同じ週末に扱った。4月22日と23日には、HexCladの炊飯鍋・卵焼き器、炊飯器ガイド、OXOのHexClad代替も出ている。</p>
+<p>ピッチ角度: 「米国編集は『非毒性・マイクロプラスチックフリー・単一素材・ル・クルーゼ替』を同時に探している。南部鉄器とバーミキュラは安物の代替ではなく、素材と産地で上位棚を取れる。NY NOW SummerでWilliams Sonoma、Food52、Crate &amp; Barrel系のバイヤー接触を組める。」</p>
+<p>90日アクション: 岩鋳、及源、Sukoyaki、Vermicular Internationalを候補化し、Williams Sonoma、Sur La Table、Food52、Crate &amp; Barrel、MoMA Storeでの現行SKU有無を確認する。NY NOW Summerに向けて、Northeastのホームバイヤー候補を3名リスト化する。</p>
+<h3>3. 麹、甘酒、味噌漬けは専門グローサリー前にシェフパントリーで試す</h3>
+<p>背景: Saveurは2026年4月23日に麹特集を4本出し、Bon Appetitは4月27日にCured Egg Yolksを掲載した。これは、塩麹、甘酒、八丁味噌、卵黄味噌漬けを「珍しい日本食品」ではなく、米国料理編集が扱える技法として出す機会である。</p>
+<p>ピッチ角度: "Saveur's koji week and Bon Appetit's cured-yolk recipe create a chef-pantry slot for Japanese fermentation that is broader than miso soup. The bridge product is shio-koji, amazake, or Hatcho-miso aging technique sold first to chefs, then translated into specialty grocery once recipes prove pull."</p>
+<p>90日アクション: NYのシェフ3名に味噌・麹使用状況をヒアリングする。マルクラ、ハナマルキ、秋田の甘酒、カクキュー、まるや八丁味噌、マルコメ、ひかり味噌の輸出対応SKUを5件確認し、Summer Fancy Food Showで2件の商談を作る。</p>
+<h3>4. 柚子胡椒、寒造里、七味は「辛味×長寿×発酵」の小瓶商材になる</h3>
+<p>背景: Food &amp; Wineは2026年4月27日に唐辛子を長寿文脈で扱った。<a href="https://www.instagram.com/cabagges.world/">@cabagges.world</a>は4月25日に柚子胡椒入り親子丼を投稿し、Datassentialは柚子胡椒の4年メニュー浸透率+63%を示している。</p>
+<p>ピッチ角度: 「米国では唐辛子が『辛い調味料』から『長寿・発酵・クリーンラベル』へ再定義されている。柚子胡椒、寒造里、七味は小容量で単価を取りやすく、Whole Foods／Erewhon／Eatalyのspecialty pantry棚に説明しやすい。Summer Fancy Food Showで試食導入に向く。」</p>
+<p>90日アクション: 柚子胡椒、寒造里、八幡屋礒五郎、S&amp;B上位帯の10SKU表を作る。項目は輸入者、英語ラベル、卸価格、既存米国小売、賞味期限、HTS。Summer Fancy Food Show前に3サプライヤーへ絞る。</p>
+<h2>捨てたシグナルと次の深掘り</h2>
+<p>日本カレーは有望だが、今週はFood &amp; Wineの1本とJETROの東海岸支援文脈に留まる。マティーニと日本酒・紫蘇はバー導入には使えるが、アルコール規制とサプライヤー適性で90日実行が重い。非欧州系菓子パンは面白いが、冷凍・半焼成・賞味期限が先に来るため、今回は優先度を下げる。</p>
+<p>次の深掘りは4本でよい。かぼすポン酢と完熟かぼす、南部鉄器/バーミキュラの米国棚監査、柚子胡椒/寒造里/七味の小瓶ユニットエコノミクス、麹/甘酒のシェフパントリー導入である。</p>
+<h2>注意点</h2>
+<p>食品寄りのソース構成のため、アパレルはほぼ検出できていない。ホームは食メディアのクックウェア、ドリンクウェア経由で拾っている。日本側の週末から月曜午前の商業PRは薄く、今回の強い仮説ほど公開情報ではなく直接ヒアリングでA判定に上げる必要がある。</p>
+</body>
+</html>
